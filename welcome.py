@@ -1,3 +1,7 @@
+from SignIn import checkDriverSignUpDetails
+
+
+
 def chooseUserProfile():
 		userProfile = input("Press 'D' for driver or 'M' for merchant: \n")
 		
@@ -10,9 +14,11 @@ def chooseUserProfile():
 
 			if userProfile =='D':
 				print('Welcome to our driver registration app')
+
 				
 			elif userProfile =='M':
 				print('Welcome to our merchant registration app')
+		
 		return(userProfile)	
 
 def signUporSignIn():
@@ -23,11 +29,12 @@ def signUporSignIn():
 			print("Sorry please choose correct option")
 		else:
 			if chooseOption == '1':
-				print('please enter your username :\n')
+				# print('Please enter your username :\n')
+				checkDriverSignUpDetails()
+
 				
 			elif chooseOption =='2':
 				print('Welcome to merchant registration page')
 
 
-selectedprofile = chooseUserProfile()
-signUporSignIn()
+
