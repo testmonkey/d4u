@@ -26,7 +26,7 @@ def signUporSignIn():
 				print('please enter your username :\n')
 				
 			elif chooseOption =='2':
-				print('welcome to registration page')
+				print('Welcome to merchant registration page')
 
 
 selectedprofile = chooseUserProfile()
